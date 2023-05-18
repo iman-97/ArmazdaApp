@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Armazda.Web", "Armazda.Web\Armazda.Web.csproj", "{F9A02DE1-29D4-4447-B74F-96A6F33A469C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Armazda.Models", "Armazda.Models\Armazda.Models.csproj", "{18E80A4D-E0EC-4A4B-BB8B-D51AC75D46C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Armazda.DataAccess", "Armazda.DataAccess\Armazda.DataAccess.csproj", "{57F7FA8A-FE50-44F1-B9E7-CBADF431546A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Armazda.Services", "Armazda.Services\Armazda.Services.csproj", "{EBFA7837-D2BD-4611-A481-8944D3C122E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9A02DE1-29D4-4447-B74F-96A6F33A469C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A02DE1-29D4-4447-B74F-96A6F33A469C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A02DE1-29D4-4447-B74F-96A6F33A469C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A02DE1-29D4-4447-B74F-96A6F33A469C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18E80A4D-E0EC-4A4B-BB8B-D51AC75D46C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E80A4D-E0EC-4A4B-BB8B-D51AC75D46C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E80A4D-E0EC-4A4B-BB8B-D51AC75D46C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E80A4D-E0EC-4A4B-BB8B-D51AC75D46C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57F7FA8A-FE50-44F1-B9E7-CBADF431546A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F7FA8A-FE50-44F1-B9E7-CBADF431546A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F7FA8A-FE50-44F1-B9E7-CBADF431546A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F7FA8A-FE50-44F1-B9E7-CBADF431546A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBFA7837-D2BD-4611-A481-8944D3C122E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFA7837-D2BD-4611-A481-8944D3C122E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFA7837-D2BD-4611-A481-8944D3C122E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFA7837-D2BD-4611-A481-8944D3C122E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14CD21E5-0A95-4D32-A20F-7F35DB4112D4}
+	EndGlobalSection
+EndGlobal

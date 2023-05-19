@@ -1,8 +1,46 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using Armazda.Models.ViewModels;
+@model CreateData
+@{
+    ViewBag.Title = "Home Page";
+    var notif = (string)ViewBag.Notif;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<form asp-action="Create" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>
+                <label asp-for="Name">Name:</label>
+            </td>
+            <td>
+                <input asp-for=Name />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="Image">Image:</label>
+            </td>
+            <td>
+                <input asp-for=Image />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="VideoLink">Link:</label>
+            </td>
+            <td>
+                <input asp-for=VideoLink />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" />
+            </td>
+        </tr>
+    </table>
+
+    @if(notif != null && notif != "")
+    {
+        <p>@notif</p>
+    }
+
+</form>

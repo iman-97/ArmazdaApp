@@ -1,7 +1,16 @@
+using Armazda.DataAccess;
+using Armazda.Services;
+using Armazda.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ApplicationDbContext>(o => o.UseSqlServer(
+    builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddTransient<IImagesService, ImagesService>();
 
 var app = builder.Build();
 
@@ -15,11 +24,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

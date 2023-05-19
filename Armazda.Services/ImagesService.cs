@@ -1,4 +1,5 @@
 ﻿using Armazda.DataAccess;
+using Armazda.Models.DTOs;
 using Armazda.Models.Models;
 using Armazda.Models.ViewModels;
 using Armazda.Services.Interfaces;
@@ -16,9 +17,16 @@ public class ImagesService : IImagesService
         _dbContext = dbContext;
     }
 
-    public async Task<List<ImageData>> GetAlImages()
+    public async Task<List<ImageDataDTO>> GetAllImages()
     {
-        return await _dbContext.ImageDatas.ToListAsync();
+        return await _dbContext.ImageDatas
+            .Select(x => new ImageDataDTO
+            {
+                Name = x.Name,
+                VideoLink = x.VideoLink,
+                Image = x.Image
+            }).ToListAsync();
+            
     }
 
     public async Task<bool> AddImage(CreateData data)
